@@ -1,6 +1,142 @@
 # DIACRITICS AND MODIFIERS
 diacritics:
 
+# Added
+  - marker: ʳ # Added
+    name: "Rhotacized-English"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content:
+      ant: "-"
+      hi: "+"
+      round: "+"
+
+  - marker: ʴ # Added
+    name: "Rhotacized-Spanish"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content:
+      ant: "-"
+      hi: "+"
+      round: "+"
+
+  - marker: ᵇ̵ # Added
+    name: "Pre Little b"
+    position: pre
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+  - marker: ʰ̵ # Added
+    name: "Pre Little h"
+    position: pre
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+    
+  - marker: ᵈ̵ # Added
+    name: "Pre Little d"
+    position: pre
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+  - marker: ̪ # Added
+    name: "Dentalized"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+       
+  - marker: ˈ # Added
+    name: "Primary Stress"
+    position: pre
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+  - marker: ˌ # Added
+    name: "Secondary Stress"
+    position: pre
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+    
+  - marker: ̾ # Added
+    name: "Distorted"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+  - marker: ᵊ # Added
+    name: "Slight Vowel"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+    
+  - marker: ᵗ # Added
+    name: "Post Little t"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+  - marker: ᶻ # Added
+    name: "Post Little z"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+    
+  - marker: ̚ # Added
+    name: "Unreleased"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+    
+  - marker: ᵈ # Added
+    name: "Post Little d"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+    
+  - marker: ᵍ # Added
+    name: "Post Little g"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+  - marker: ͉ # Added
+    name: "Weak Articulation"
+    position: post
+    conditions:
+      - syl: "+"
+      - syl: "-"
+    content: {}
+
+
 # Airstream mechanism
 
   - marker: ʼ
@@ -11,6 +147,14 @@ diacritics:
         voi: "-"
     content:
       cg: "+"
+
+  - marker: ͈
+    name: Stopped
+    position: post
+    conditions:
+      - cont: "-"
+    content:
+      cont: "+"
 
 # Laryngeal features
 
