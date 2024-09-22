@@ -173,10 +173,17 @@ def main(ipa_bases, ipa_all, dia_defs, sort_order):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('bases', help='File containing IPA bases (ipa_bases.csv)')
-    parser.add_argument('all', help='File to which all IPA segments is to be written (ipa_all.csv)')
-    parser.add_argument('-d', '--dia', required=True, help='Diacritic definition file (default=diacritic_definitions.yml)')
-    parser.add_argument('-s', '--sort-order', required=True, help='File definiting sort order.')
-    args = parser.parse_args()
-    main(args.bases, args.all, args.dia, args.sort_order)
+    # Philip commented out this block because not working from command line.
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('bases', help='File containing IPA bases (ipa_bases.csv)')
+    # parser.add_argument('all', help='File to which all IPA segments is to be written (ipa_all.csv)')
+    # parser.add_argument('-d', '--dia', required=True, help='Diacritic definition file (default=diacritic_definitions.yml)')
+    # parser.add_argument('-s', '--sort-order', required=True, help='File definiting sort order.')
+    # args = parser.parse_args()
+    # main(args.bases, args.all, args.dia, args.sort_order)
+    
+    # Philip's workaround running directly from within generate_ipa_all.py if the argument parser isn't working right.
+    import os
+    os.chdir("panphon")
+    os.chdir("data")
+    main('ipa_bases.csv', 'ipa_all.csv', 'diacritic_definitions.yml', 'sort_order.yml')
