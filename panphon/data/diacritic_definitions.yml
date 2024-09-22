@@ -152,9 +152,9 @@ diacritics:
     name: Stopped
     position: post
     conditions:
-      - cont: "-"
+      - cont: "+"
     content:
-      cont: "+"
+      cont: "-"
 
 # Laryngeal features
 

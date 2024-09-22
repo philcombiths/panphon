@@ -170,6 +170,7 @@ def main(ipa_bases, ipa_all, dia_defs, sort_order):
             if new_seg is not None:
                 all_segments.add(new_seg)
     write_ipa_all(ipa_bases, ipa_all, all_segments, sort_order)
+    print("Done")
 
 
 if __name__ == '__main__':
@@ -181,6 +182,7 @@ if __name__ == '__main__':
     # parser.add_argument('-s', '--sort-order', required=True, help='File definiting sort order.')
     # args = parser.parse_args()
     # main(args.bases, args.all, args.dia, args.sort_order)
+
     
     # Philip's workaround running directly from within generate_ipa_all.py if the argument parser isn't working right.
     import os
