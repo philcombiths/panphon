@@ -210,3 +210,19 @@ class Segment(object):
             list: the names of the features that differ in the two vectors
         """
         return [k for (k, v) in self.items() if other[k] != v]
+
+    def differing_specified_specs(self, other):
+        """Return a list of feature names that differ in their specified values,
+        only considering features that are specified in both segments.
+
+        Args:
+            other (Segment): object to compare with `self`
+
+        Returns:
+            list: the names of the features that differ in the two vectors,
+                  considering only specified features.
+        """
+        self_specified = self.specified()
+        other_specified = other.specified()
+        common_keys = set(self_specified.keys()).intersection(other_specified.keys())
+        return [k for k in common_keys if self_specified[k] != other_specified[k]]
