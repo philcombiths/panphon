@@ -345,6 +345,127 @@ diacritics:
     content:
       long: "-"
 
+# Non-standard or non-modifying
+
+  - marker: ʳ
+    name: "Rhotacized"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ʴ
+    name: "Rhotacized"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ͈
+    name: "Fortition"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᵇ̵
+    name: "Pre Little b"
+    position: pre
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ʰ̵
+    name: "Pre Little h"
+    position: pre
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᵈ̵
+    name: "Pre Little d"
+    position: pre
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ̪
+    name: "Dentalized"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ˈ
+    name: "Primary Stress"
+    position: pre
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ˌ
+    name: "Secondary Stress"
+    position: pre
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ̾
+    name: "Distorted"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᵊ
+    name: "Slight Vowel"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᵗ
+    name: "Post Little t"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᶻ
+    name: "Post Little z"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ̚
+    name: "Unreleased"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᵈ
+    name: "Post Little d"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ᵍ
+    name: "Post Little g"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
+  - marker: ͉
+    name: "Weak Articulation"
+    position: post
+    conditions:
+      - {}
+    content: {}
+
 # COMBINATIONS OF DIACRITICS AND MODIFIERS
 combinations:
 
